@@ -61,7 +61,58 @@ i{
     font-size: 1.3em;
 }
 
-p{
+.recipe-info{
     margin-top: 5%;
     margin-bottom: 8%;
+}
+
+footer{
+    margin-top: 30%;
+    background-color: red;
+    padding: 10%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    font-weight: bolder ;
+    flex-direction: column;
+}
+
+@media (min-width: 1020px){
+    h1{
+        font-size: 4em;
+    }
+    .recipe-img{
+        width: 80%;
+    }
+    .demo{
+        display: flex;
+        flex-direction: row;
+    }
+    .recipe-overview{
+        width: 30%;
+        height: 58vh;
+        margin-top: 19%;
+        padding-top: 3%;
+    }
+    .recipe-overview h4{
+    font-size: 1.9em;
+    margin-bottom: 15%;
+    }
+    .recipe-overview ul{
+        font-size: 1.4em;
+    }
+    .recipe-overview li{
+        margin: 15% 0%;
+    }
+    .recipe-intro-container{
+        margin-bottom: 10%;
+
+    }
+    .ingredients h4, .steps h4{
+        font-size: 3.5em;
+    }
+    .ingredients ul, .steps ul{
+        font-size: 1.5em;
+    }
+
 }

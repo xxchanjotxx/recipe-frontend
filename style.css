@@ -8,7 +8,9 @@ main{
     font-family: 'Source Serif Pro';
     padding: 0% 4%;
 }
-
+a{
+    text-decoration: none;
+}
 .hero-section{
     margin-top: 10%;
     margin-bottom: 15%;
