@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Source Serif Pro';
+    padding: 0% 4%;
+}
+
+.recipe-intro-container{
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+.recipe-img{
+    margin-top: 5%;
+    width: 100%;
+}
+h1{
+    color: red;
+    margin: 6% 0%;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.recipe-overview{
+    border: 1px solid rgb(214, 207, 207);
+    width: 100%;
+    padding: 7% 2%;
+}
+li{
+    margin: 5% 0%;
+}
+h4{
+    font-size: 1.6em;
+    opacity: 80%;
+    color: rgb(219, 62, 62);
+    font-weight: bolder;
+    margin-bottom: 6%;
+}
+span{
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.ingredients, .steps{
+    margin: 7% 0%;
+    padding: 0% 2%;
+}
+ul{
+    list-style-type:none;
+}
+i{
+    font-size: 1.2em;
+}
+.steps{
+    width: 100%;
+}
+.step-heading{
+    font-size: 1.3em;
+}
+
+p{
+    margin-top: 5%;
+    margin-bottom: 8%;
+}

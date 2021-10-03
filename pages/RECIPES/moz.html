@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body style="overflow-x: hidden">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content-->
+
+    <main>
+      <div class="recipe-intro-container">
+        <h1>Mozzarella Cheese Sticks</h1>
+        <img
+          src="https://www.oetker.com.my/Recipe/Recipes/oetker.com.my/my-en/savory/image-thumb__65328__RecipeDetailsLightBox/mozzarella-cheese-sticks.jpg"
+          alt=""
+          class="recipe-img"
+        />
+      </div>
+
+      <div class="recipe-overview">
+        <h4>Recipe Overview</h4>
+        <ul>
+          <li><span>Prep: </span>15 mins</li>
+          <li><span>Cook: </span>15 mins</li>
+          <li><span>Total: </span>30 mins</li>
+          <li><span>Servings: </span>8</li>
+          <li><span>Yield: </span>8 servings</li>
+        </ul>
+      </div>
+
+      <div class="ingredients">
+        <h4>Ingredients</h4>
+        <ul>
+            <li> <input type="checkbox"> 2 eggs, beaten </li>
+            <li> <input type="checkbox"> 2 eggs, beaten </li>
+            <li> <input type="checkbox"> 2 eggs, beaten </li>
+            <li> <input type="checkbox"> 2 eggs, beaten </li>
+            <li> <input type="checkbox"> 2 eggs, beaten </li>
+            <li> <input type="checkbox"> 2 eggs, beaten </li>
+        </ul>
+      </div>
+
+      <div class="steps">
+        <h4>Directions</h4>
+        <ul>
+            <i class="bi bi-bookmark-check-fill"></i> <span class="step-heading" role="heading">Step 1</span>
+            <p>In a small bowl, mix the eggs and water.</p>
+            <i class="bi bi-bookmark-check-fill"></i> <span class="step-heading" role="heading">Step 2</span>
+            <p>In a small bowl, mix the eggs and water.</p>
+            <i class="bi bi-bookmark-check-fill"></i> <span class="step-heading" role="heading">Step 3</span>
+            <p>In a small bowl, mix the eggs and water.</p>
+            <i class="bi bi-bookmark-check-fill"></i> <span class="step-heading" role="heading">Step 4</span>
+            <p>In a small bowl, mix the eggs and water.</p>
+            <i class="bi bi-bookmark-check-fill"></i> <span class="step-heading" role="heading">Step 5</span>
+            <p>In a small bowl, mix the eggs and water.</p>
+            <i class="bi bi-bookmark-check-fill"></i> <span class="step-heading" role="heading">Step 6</span>
+            <p>In a small bowl, mix the eggs and water.</p>
+        </ul>
+      </div>
+
+      <footer>
+          <div class="logo-footer"></div>
+            <p> &copy; 2021-2022 xyz <br>   All Rights Reserved</p>
+      </footer>
+    </main>
+  </body>
+</html>
