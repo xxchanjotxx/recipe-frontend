@@ -78,7 +78,7 @@ main{
 }
 .recipe-container{
     position: relative;
-    margin-bottom: 40%;
+    margin-bottom: 50%;
 }
 .recipe-about-container{
     position: absolute;
@@ -95,13 +95,17 @@ main{
     height: 65%;
     padding: 10% 3%;
     outline: 1px solid rgb(248, 247, 247);
-   
 }
 
 .heading{
     margin: 15% 0%;
     font-size: 2.2em;
     font-weight: 550;
+}
+.recipe-about{
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
 span{
     color: red;
@@ -114,6 +118,7 @@ button{
     text-decoration: none;
     width: 40%;
     cursor: pointer;
+    height: 10%;
     
 }
 
@@ -127,7 +132,14 @@ button{
 .arrow{
     visibility: hidden;
 }
-
+footer{
+    background-color: red;
+    width: 100%;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+}
 
 /* PC */
 @media (min-width: 1020px){
@@ -146,10 +158,29 @@ button{
         padding: 0% 10%;
         width: 50%;
     }
+  
+    .quote-container{
+        width: 100%;
+        position: relative;
+        background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+        center center/ cover no-repeat;
+
+    }
+    .img{
+        position: absolute;
+        width: 100%;   
+        background-color: red;
+        filter:opacity(0.1);
+        height: 100%;
+   
+    }
     .quote{
-        width: 60%;
         margin: auto;
         font-size: 3em;
+        background-color: unset;
+        color: white;
+        font-weight: bold;
+        z-index: 1000;
     }
 
     .heading{
@@ -189,6 +220,9 @@ button{
 
     }
     .recipe-about{
+        visibility: visible;
+        width: auto;
+        height: auto;
         padding: 6% 0%;
     }
 
