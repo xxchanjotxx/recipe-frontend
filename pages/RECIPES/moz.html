@@ -11,8 +11,7 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
@@ -95,7 +94,7 @@
     <main>
       <div class="demo">
         <div class="recipe-intro-container">
-          <h1>Mozzarella Cheese Sticks</h1>
+          <h1 class="heading">Mozzarella Cheese Sticks</h1>
           <img
             src="https://www.oetker.com.my/Recipe/Recipes/oetker.com.my/my-en/savory/image-thumb__65328__RecipeDetailsLightBox/mozzarella-cheese-sticks.jpg"
             alt=""
@@ -120,12 +119,17 @@
         <ul>
           <li><input type="checkbox" /> 2 eggs, beaten</li>
           <li><input type="checkbox" /> ¼ cup water</li>
-          <li><input type="checkbox" /> 1 ½ cups Italian seasoned bread crumbs</li>
+          <li>
+            <input type="checkbox" /> 1 ½ cups Italian seasoned bread crumbs
+          </li>
           <li><input type="checkbox" /> ½ teaspoon garlic salt</li>
           <li><input type="checkbox" /> ⅔ cup all-purpose flour</li>
           <li><input type="checkbox" /> ⅓ cup cornstarch</li>
           <li><input type="checkbox" /> ⅓ cup cornstarch</li>
-          <li><input type="checkbox" /> 1 (16 ounce) package mozzarella cheese sticks</li>
+          <li>
+            <input type="checkbox" /> 1 (16 ounce) package mozzarella cheese
+            sticks
+          </li>
         </ul>
       </div>
 
@@ -137,24 +141,60 @@
           <p class="recipe-info">In a small bowl, mix the eggs and water.</p>
           <i class="bi bi-bookmark-check-fill"></i>
           <span class="step-heading" role="heading">Step 2</span>
-          <p class="recipe-info">Mix the bread crumbs and garlic salt in a medium bowl. In a medium bowl, blend the flour and cornstarch.</p>
+          <p class="recipe-info">
+            Mix the bread crumbs and garlic salt in a medium bowl. In a medium
+            bowl, blend the flour and cornstarch.
+          </p>
           <i class="bi bi-bookmark-check-fill"></i>
           <span class="step-heading" role="heading">Step 3</span>
-          <p class="recipe-info">In a large heavy saucepan, heat the oil to 365 degrees F (185 degrees C).</p>
+          <p class="recipe-info">
+            In a large heavy saucepan, heat the oil to 365 degrees F (185
+            degrees C).
+          </p>
           <i class="bi bi-bookmark-check-fill"></i>
           <span class="step-heading" role="heading">Step 4</span>
-          <p class="recipe-info">One at a time, coat each mozzarella stick in the flour mixture, then the egg mixture, then in the bread crumbs and finally into the oil. Fry until golden brown, about 30 seconds. Remove from heat and drain on paper towels.</p>
-
+          <p class="recipe-info">
+            One at a time, coat each mozzarella stick in the flour mixture, then
+            the egg mixture, then in the bread crumbs and finally into the oil.
+            Fry until golden brown, about 30 seconds. Remove from heat and drain
+            on paper towels.
+          </p>
         </ul>
       </div>
     </main>
     <footer>
-      <div class="logo-footer"><img src="../../logo2.jpg" alt="" class="logo">
-        <p>
-            &copy; 2021-2022 xyz <br />
-            All Rights Reserved
-          </p></div>
+        <div>
+            
+        </div>
+      <div class="logo-footer">
+        <img src="../../logo2.jpg" alt="" class="logo" />
+        <div class="connect-container">
+        <h1 class="connect">Connect with us!</h1>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+        </div>
+
+    
       
+        <div>
+            <h5 class="newsletter-heading">Subscribe to our newsletter!</h5>
+            <form action="moz.php" method="POST">
+                <input type="email" class="email" name="email">
+                <input type="submit" value="Sign Up">
+                
+            </form>
+        </div>
+        <p>
+          &copy; 2021-2022 FoodHub <br />
+          All Rights Reserved
+        </p>
+      </div>
     </footer>
   </body>
 </html>
+
+
