@@ -67,8 +67,8 @@ i{
 }
 
 footer{
-    margin-top: 30%;
-    background-color: #5a1515;
+    margin-top: 50%;
+    background-color: #8f1d1d;
     padding: 10%;
     text-align: center;
     color: #fff;
@@ -83,6 +83,9 @@ footer{
 .logo{
     width: 70%;
 }
+.connect-container{
+    margin: 20% 0%;
+}
 .connect{
     margin-top: 15%;
     margin-bottom: 7%;
@@ -94,13 +97,26 @@ footer{
     justify-content: space-evenly;
 }
 .newsletter-heading{
-    margin: 10% 0%;
-    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+.email{
+    width: 90%;
+    position: relative;
+    opacity: 70%;
+    outline: none;
+    border: none;
+    padding-bottom: 4%;
 }
 .button{
-    border: none;
-    outline: none;
-    text-decoration: none;
+    position: absolute;
+    right: 10%;
+    padding: 1% 2%;
+}
+.newsletter-container{
+    margin-bottom: 20%;
 }
 @media (min-width: 1020px){
     .heading{
@@ -140,28 +156,57 @@ footer{
         font-size: 1.5em;
     }
     .logo-footer{
-        display: flex;
-        flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
         padding: 1%; 
-        height: 30vh;
     }
     .logo{
-        width: 40%;
+        width: 50%;
+        text-align: center;
     }
     footer{
-        padding-top: 10%;
-        padding-bottom: 0%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 20%;
 
     }
     footer p{
         text-align: center;
-        display: flex;
-        /* align-items: center; */
-        /* justify-content: center; */
         font-size: 1.6em;
-        margin-top: -8%;
+        margin-top: 3%;
+    }
+    .flex-container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .connect-container, .newsletter-container{
+        margin: 10% 0%;
+    }
+    .newsletter-heading{
+        margin-top: 13%;
+    }
+    
+    .connect-container{
+        font-size: 2em;
+        margin-right: 10%;
+       
+    }
+    .newsletter-container{
+        font-size: 1.5em;
+        border-left: 2px solid white;
+        padding-left: 10%;
+    }
+    .connect{
+        font-size: 1.5em;
+    }
+
+    .button{
+        padding: 0.75% 2%;
+        right: 5%;
+        font-size: 0.8em;
+    }
+    .email{
+        width: 100%;
+        padding: 2%;
     }
   
 }

@@ -116,16 +116,14 @@
     </section>
     <main class="main">
       <!-- QUOTE CONTAINER -->
-      <section class="restaurant__quote__container"> 
-        <div class="restaurant__quote__image">
-           
-       </div>
-       <h3 class="restaurant__quote__text">
-        "A Recipe has no Soul. You, as the Cook, must Bring Soul to the
-        Recipe"
-        <br /><br />-Thomas Keller
-       </h3>
-   </section>
+      <section class="restaurant__quote__container">
+        <div class="restaurant__quote__image"></div>
+        <h3 class="restaurant__quote__text">
+          "A Recipe has no Soul. You, as the Cook, must Bring Soul to the
+          Recipe"
+          <br /><br />-Thomas Keller
+        </h3>
+      </section>
       <!-- <div class="quote-container">
         <div class="img"></div>
         <h1 class="quote">
@@ -148,10 +146,7 @@
             <h2>Mozarella Cheese Sticks</h2>
             <p>By Chanjot Nanda</p>
             <p class="recipe-about">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
-              optio vitae velit voluptate voluptatem. Consequuntur ipsa nam
-              doloremque minima nisi, porro explicabo ea ipsam maxime mollitia
-              sunt minus dolore aliquid.
+              No store-bought substitute can match the deliciousness of Homemade Mozzarella Sticks, freshly made in your kitchen. These are a very simple to make, wonderfully ooey gooey snack! So, go ahead and try this easy-to-make recipe for your loved ones, impress them with your culinary skills and indulge in its lip-smacking flavours right away.
             </p>
             <button>
               <a href="./pages/RECIPES/moz.html"
@@ -175,9 +170,7 @@
             <h2>Tuscan Butter Roast Chicken</h2>
             <p>By Chanjot Nanda</p>
             <p class="recipe-about">
-              Lorem ipsum dolor, sit amet. Sed optio vitae velit voluptate
-              voluptatem. Consequuntur ipsa nam doloremque minima nisi, porro
-              explicabo ea ipsam maxime mollitia sunt minus dolore aliquid.
+              Roasted chickens are the perfect Sunday supper. Season the chicken well, in this case with the most amazing Tuscan butter, and throw whatever vegetables you have around it and you've set yourself up for a week's worth of meals.
             </p>
 
             <button>
@@ -202,10 +195,7 @@
             <h2>Homemade Pancakes</h2>
             <p>By Chanjot Nanda</p>
             <p class="recipe-about">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
-              optio vitae velit voluptate voluptatem. Consequuntur ipsa nam
-              doloremque minima nisi, porro explicabo ea ipsam maxime mollitia
-              sunt minus dolore aliquid.
+              Nothing says "weekend" like homemade pancakes for breakfast. Our easy recipe will help you whip them up in less than 30 minutes. Making pancake batter from scratch is so simple that you'll wonder why you never did it before!
             </p>
 
             <button>
@@ -222,20 +212,43 @@
       </section>
     </main>
     <footer>
-      <div class="logo-footer"><img src="../../logo2.jpg" alt="" class="logo">
-        <p>
-            &copy; 2021-2022 FoodHub <br />
-            All Rights Reserved
-          </p>
-  </div>
-      
+      <div class="logo-footer">
+        <img src="../../logo2.jpg" alt="" class="logo" />
+
+        <div class="flex-container">
+          <div class="connect-container">
+            <h1 class="connect">Connect with us!</h1>
+            <div class="icons">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
+          </div>
+          <div class="newsletter-container">
+            <h5 class="newsletter-heading">Subscribe to our newsletter!</h5>
+            <form action="moz.php" method="POST">
+              <input type="email" class="email" name="email" />
+              <input type="submit" value="Subscribe" class="buttonn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <p>&copy; 2021-2022 FoodHub All Rights Reserved</p>
     </footer>
 
     <script>
       $(document).ready(function () {
-        $(".one").hover(function(){  $(this).toggleClass("on-click-button")});
-        $(".two").hover(function(){  $(this).toggleClass("on-click-button")});
-        $(".three").hover(function(){  $(this).toggleClass("on-click-button")});
+        $(".one").hover(function () {
+          $(this).toggleClass("on-click-button");
+        });
+        $(".two").hover(function () {
+          $(this).toggleClass("on-click-button");
+        });
+        $(".three").hover(function () {
+          $(this).toggleClass("on-click-button");
+        });
       });
     </script>
   </body>
