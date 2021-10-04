@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 1vh;
+}
 .on-click-button{
    filter: brightness(0.9);
 }
@@ -156,7 +159,7 @@ span{
 
 button{
     background-color: white;    
-    margin-top: 2%;
+
     border: none;
     text-decoration: none;
     width: 40%;
@@ -175,14 +178,28 @@ button{
 .arrow{
     visibility: hidden;
 }
-footer{
-    background-color: red;
-    width: 100%;
-}
+
 
 .copyright{
     width: 100%;
     text-align: center;
+}
+footer{
+    margin-top: 30%;
+    background-color: #8F1D1D;
+    padding: 10%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    font-weight: bolder ;
+    flex-direction: column;
+}
+.logo-footer{
+    width: 100%;
+}
+.logo{
+    width: 70%;
+    margin-bottom: 10%;
 }
 
 /* PC */
@@ -276,12 +293,12 @@ footer{
         width: auto;
         height: auto;
         padding: 6% 0%;
+        margin-bottom: 0%;
     }
 
     button{
         background-color:unset;
         font-size: 1.5em;
-        margin-top: 2%;
         border: none;
         text-decoration: none;
         width: 42%;
@@ -294,6 +311,30 @@ footer{
         width:7%;
         margin: 0% 6%;
 
+    }
+    .logo-footer{
+        display: flex;
+        flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+        padding: 1%; 
+        height: 30vh;
+    }
+    .logo{
+        width: 40%;
+    }
+    footer{
+        padding-top: 10%;
+        padding-bottom: 0%;
+
+    }
+    footer p{
+        text-align: center;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        font-size: 1.6em;
+        margin-top: -8%;
     }
 
     
