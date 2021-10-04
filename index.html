@@ -27,75 +27,114 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Recipe Website</title>
   </head>
 
   <body style="overflow-x: hidden">
- 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
     <!-- HERO SECTION -->
-      <section class="hero-section">
-        <div class="hero-container">
-          <div class="hero-image-container">
-            <img
-              src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg"
-              alt=""
-              class="hero-image"
-            />
-            <h1 class="search-heading">Find a Recipe!</h1>
-            <input type="text" class="search" />
-            <i class="bi bi-search search-icon"></i>
-          </div>
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-image-container">
+          <img
+            src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg"
+            alt=""
+            class="hero-image"
+          />
+          <h1 class="search-heading">Find a Recipe!</h1>
+          <input type="text" class="search" />
+          <i class="bi bi-search search-icon"></i>
         </div>
-      </section>
-      <main class="main">
-        <!-- QUOTE CONTAINER -->
-        <div class="quote-container">
-          <div class="img"></div>
-          <h1 class="quote">
-            "A Recipe has no Soul. You, as the Cook, must Bring Soul to the Recipe"
-            <br /><br />-Thomas Keller
-          </h1>
-        </div>
-      
+      </div>
+    </section>
+    <main class="main">
+      <!-- QUOTE CONTAINER -->
+      <section class="restaurant__quote__container"> 
+        <div class="restaurant__quote__image">
+           
+       </div>
+       <h3 class="restaurant__quote__text">
+        "A Recipe has no Soul. You, as the Cook, must Bring Soul to the
+        Recipe"
+        <br /><br />-Thomas Keller
+       </h3>
+   </section>
+      <!-- <div class="quote-container">
+        <div class="img"></div>
+        <h1 class="quote">
+          "A Recipe has no Soul. You, as the Cook, must Bring Soul to the
+          Recipe"
+          <br /><br />-Thomas Keller
+        </h1>
+      </div> -->
+
       <h1 class="heading">Recipes</h1>
       <section class="recipe-section">
         <div class="recipe-container">
@@ -103,29 +142,53 @@
           <img
             src="https://www.oetker.com.my/Recipe/Recipes/oetker.com.my/my-en/savory/image-thumb__65328__RecipeDetailsLightBox/mozzarella-cheese-sticks.jpg"
             alt=""
-            class="recipe-image"
+            class="recipe-image one"
           />
           <div class="recipe-about-container">
             <h2>Mozarella Cheese Sticks</h2>
-            <p>By Chanjot Nanda</p> 
-            <p class="recipe-about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed optio vitae velit voluptate voluptatem. Consequuntur ipsa nam doloremque minima nisi, porro explicabo ea ipsam maxime mollitia sunt minus dolore aliquid.</p>
-            <button><a href="./pages/RECIPES/moz.html"><span>Click here</span><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03MCA1MC44NTlMMCAwbDIxLjU4IDUwLjg1OUwwIDEwMHoiIGZpbGw9IiNGOTNGMjMiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" alt="" class="arrow"></a></button>
+            <p>By Chanjot Nanda</p>
+            <p class="recipe-about">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+              optio vitae velit voluptate voluptatem. Consequuntur ipsa nam
+              doloremque minima nisi, porro explicabo ea ipsam maxime mollitia
+              sunt minus dolore aliquid.
+            </p>
+            <button>
+              <a href="./pages/RECIPES/moz.html"
+                ><span>Click here</span
+                ><img
+                  src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03MCA1MC44NTlMMCAwbDIxLjU4IDUwLjg1OUwwIDEwMHoiIGZpbGw9IiNGOTNGMjMiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg=="
+                  alt=""
+                  class="arrow"
+              /></a>
+            </button>
           </div>
-          
         </div>
         <div class="recipe-container demo">
           <div class="banner">COOK THIS NOW</div>
           <img
             src="https://hips.hearstapps.com/vidthumb/images/delish-tuscan-butter-roast-chicken-still002-1549648316.jpg"
             alt=""
-            class="recipe-image"
+            class="recipe-image two"
           />
           <div class="recipe-about-container">
             <h2>Tuscan Butter Roast Chicken</h2>
-            <p>By Chanjot Nanda</p> 
-            <p class="recipe-about">Lorem ipsum dolor, sit amet. Sed optio vitae velit voluptate voluptatem. Consequuntur ipsa nam doloremque minima nisi, porro explicabo ea ipsam maxime mollitia sunt minus dolore aliquid.</p>
+            <p>By Chanjot Nanda</p>
+            <p class="recipe-about">
+              Lorem ipsum dolor, sit amet. Sed optio vitae velit voluptate
+              voluptatem. Consequuntur ipsa nam doloremque minima nisi, porro
+              explicabo ea ipsam maxime mollitia sunt minus dolore aliquid.
+            </p>
 
-            <button><a href="./pages/RECIPES/chick.html"><span>Click here</span><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03MCA1MC44NTlMMCAwbDIxLjU4IDUwLjg1OUwwIDEwMHoiIGZpbGw9IiNGOTNGMjMiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" alt="" class="arrow"></a></button>
+            <button>
+              <a href="./pages/RECIPES/chick.html"
+                ><span>Click here</span
+                ><img
+                  src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03MCA1MC44NTlMMCAwbDIxLjU4IDUwLjg1OUwwIDEwMHoiIGZpbGw9IiNGOTNGMjMiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg=="
+                  alt=""
+                  class="arrow"
+              /></a>
+            </button>
           </div>
         </div>
         <div class="recipe-container demo">
@@ -133,21 +196,42 @@
           <img
             src="https://www.thespruceeats.com/thmb/lpewdgvhJg7UQJn4rEOC2wKIWuM=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/homemade-pancakes-3058757-hero-01-0ddd32c330214299bd0300f3b1d7bae4.jpg"
             alt=""
-            class="recipe-image"
+            class="recipe-image three"
           />
           <div class="recipe-about-container">
             <h2>Homemade Pancakes</h2>
-            <p>By Chanjot Nanda</p> 
-            <p class="recipe-about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed optio vitae velit voluptate voluptatem. Consequuntur ipsa nam doloremque minima nisi, porro explicabo ea ipsam maxime mollitia sunt minus dolore aliquid.</p>
+            <p>By Chanjot Nanda</p>
+            <p class="recipe-about">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+              optio vitae velit voluptate voluptatem. Consequuntur ipsa nam
+              doloremque minima nisi, porro explicabo ea ipsam maxime mollitia
+              sunt minus dolore aliquid.
+            </p>
 
-            <button><a href="./pages/RECIPES/panc.html"><span>Click here</span><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03MCA1MC44NTlMMCAwbDIxLjU4IDUwLjg1OUwwIDEwMHoiIGZpbGw9IiNGOTNGMjMiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" alt="" class="arrow"></a></button>
+            <button>
+              <a href="./pages/RECIPES/panc.html"
+                ><span class="x">Click here</span
+                ><img
+                  src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03MCA1MC44NTlMMCAwbDIxLjU4IDUwLjg1OUwwIDEwMHoiIGZpbGw9IiNGOTNGMjMiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg=="
+                  alt=""
+                  class="arrow"
+              /></a>
+            </button>
           </div>
         </div>
       </section>
     </main>
     <footer>
       <div class="logo-footer"></div>
-      <div class="copyright"> 2021-2022 xyz | All Rights Reserved</div>
+      <div class="copyright">2021-2022 xyz | All Rights Reserved</div>
     </footer>
+
+    <script>
+      $(document).ready(function () {
+        $(".one").hover(function(){  $(this).toggleClass("on-click-button")});
+        $(".two").hover(function(){  $(this).toggleClass("on-click-button")});
+        $(".three").hover(function(){  $(this).toggleClass("on-click-button")});
+      });
+    </script>
   </body>
 </html>
