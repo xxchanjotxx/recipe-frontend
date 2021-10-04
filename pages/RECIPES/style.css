@@ -18,7 +18,7 @@ main{
     margin-top: 5%;
     width: 100%;
 }
-h1{
+.heading{
     color: red;
     margin: 6% 0%;
     font-size: 1.8em;
@@ -68,24 +68,42 @@ i{
 
 footer{
     margin-top: 30%;
-    background-color: #8F1D1D;
+    background-color: #5a1515;
     padding: 10%;
     text-align: center;
     color: #fff;
     display: flex;
     font-weight: bolder ;
     flex-direction: column;
+    font-family: 'Source serif pro';
 }
 .logo-footer{
     width: 100%;
 }
 .logo{
     width: 70%;
-    margin-bottom: 10%;
 }
-
+.connect{
+    margin-top: 15%;
+    margin-bottom: 7%;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.newsletter-heading{
+    margin: 10% 0%;
+    font-weight: bold;
+}
+.button{
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
 @media (min-width: 1020px){
-    h1{
+    .heading{
         font-size: 4em;
     }
     .recipe-img{
@@ -121,21 +139,29 @@ footer{
     .ingredients ul, .steps ul{
         font-size: 1.5em;
     }
-    footer{
+    .logo-footer{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+        padding: 1%; 
+        height: 30vh;
     }
     .logo{
         width: 40%;
     }
-    footer p{
-        font-size: 2em;
-    }
+    footer{
+        padding-top: 10%;
+        padding-bottom: 0%;
 
-    .logo-footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
     }
+    footer p{
+        text-align: center;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        font-size: 1.6em;
+        margin-top: -8%;
+    }
+  
 }
